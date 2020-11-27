@@ -159,6 +159,7 @@ public class Tela_Login extends javax.swing.JFrame {
         jButtonEntrar.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jButtonEntrar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonEntrar.setText("Entrar");
+        jButtonEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonEntrar.setPreferredSize(new java.awt.Dimension(137, 26));
         jButtonEntrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -178,6 +179,7 @@ public class Tela_Login extends javax.swing.JFrame {
         jButtonSair.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jButtonSair.setForeground(new java.awt.Color(255, 255, 255));
         jButtonSair.setText("Sair");
+        jButtonSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonSair.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jButtonSairMouseExited(evt);

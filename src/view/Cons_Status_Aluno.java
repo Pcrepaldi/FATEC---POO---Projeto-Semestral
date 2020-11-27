@@ -632,7 +632,7 @@ public class Cons_Status_Aluno extends javax.swing.JFrame {
         boolean ativo = false;
         
         String status = String.valueOf(jTable1.getValueAt(row, 5));
-        System.out.println(status);
+        //System.out.println(status);
 
         if(status == "Sim"){
             ativo = true;

@@ -243,7 +243,7 @@ public class AlunoDAO {
                      '"'+u.getCpf()+'"' + ", " + '"'+u.getEmail()+'"' + ", " + '"'+u.getCelular()+'"' + ", " + "'"+pDAO.converteData(u.getData_nasc(), "yyyy-MM-dd")+"'" + ", " + '"'+u.getSexo()+'"' + ", " + '"'+u.getRua()+'"' + ", " + u.getNum_casa() + ", " + 
                      '"'+u.getBairro()+'"' + ", " + '"'+u.getCidade()+'"' + ", " + '"'+u.getEstado()+'"'+");";
 
-            //System.out.println(adicionarUsuario);
+            System.out.println(adicionarUsuario);
             stm1.execute(adicionarUsuario);
             //System.out.println("Statement 1 OK");
             stm1.close();

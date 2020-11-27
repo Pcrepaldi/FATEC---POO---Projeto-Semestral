@@ -54,13 +54,14 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jTextFieldRua = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextFieldNumero = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jTextFieldBairro = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jTextFieldCidade = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jComboBoxEstado = new javax.swing.JComboBox<>();
+        //jSpinnerNumero.setForeground(new Color(91,95,99));
+        jSpinnerNumero = new javax.swing.JSpinner();
         jButtonAvancar = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jTextFieldCel = new javax.swing.JTextField();
@@ -211,17 +212,6 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
         jLabel9.setText("Número:");
 
-        jTextFieldNumero.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jTextFieldNumero.setForeground(new java.awt.Color(91, 95, 99));
-        jTextFieldNumero.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextFieldNumeroFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextFieldNumeroFocusLost(evt);
-            }
-        });
-
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
         jLabel8.setText("Bairro:");
 
@@ -259,6 +249,9 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
         jComboBoxEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO", "DF" }));
         jComboBoxEstado.setSelectedIndex(23);
 
+        jSpinnerNumero.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jSpinnerNumero.setModel(new javax.swing.SpinnerNumberModel(0, 0, 9999, 1));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -268,15 +261,15 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextFieldRua)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextFieldNumero, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSpinnerNumero, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(50, 50, 50)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel8)
-                                .addGap(0, 195, Short.MAX_VALUE))
+                                .addGap(0, 165, Short.MAX_VALUE))
                             .addComponent(jTextFieldBairro)))
                     .addComponent(jTextFieldCidade)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -302,9 +295,9 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextFieldBairro, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addComponent(jSpinnerNumero))
                 .addGap(28, 28, 28)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -388,15 +381,10 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                             .addGroup(jPanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jTextFieldEmail, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanelContentLayout.createSequentialGroup()
-                                    .addGroup(jPanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextFieldRG, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel3))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(jPanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelContentLayout.createSequentialGroup()
-                                            .addComponent(jLabel4)
-                                            .addGap(136, 136, 136))
-                                        .addComponent(jTextFieldCPF, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jLabel3)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 223, Short.MAX_VALUE)
+                                    .addComponent(jLabel4)
+                                    .addGap(136, 136, 136))
                                 .addComponent(jTextFieldNome, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelContentLayout.createSequentialGroup()
                                     .addGroup(jPanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -411,7 +399,11 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                                     .addGap(4, 4, 4)
                                     .addComponent(jLabel5)
                                     .addGap(4, 4, 4)
-                                    .addComponent(jTextFieldCel, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jTextFieldCel, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanelContentLayout.createSequentialGroup()
+                                    .addComponent(jTextFieldRG, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jTextFieldCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jLabel6)
                             .addComponent(jLabel11)
                             .addComponent(jLabel2))
@@ -450,7 +442,7 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                         .addGroup(jPanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jComboBoxSexo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextFieldData_Nasc, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
+                        .addGap(26, 26, 26)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -650,28 +642,147 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonAvancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAvancarActionPerformed
-        boolean vazio = false;
         
-        // VERIFICANDO SE OS CAMPOS ESTÃO PREENCHIDOS CORRETAMENTE
-        /*
+        
+        boolean vazio = false;
+        String errorMessage = null;
+        
+        ///////////////// VERIFICAÇÕES DE INPUT /////////////////////////////
         if(jTextFieldNome.getText().length() == 0){
             jTextFieldNome.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Nome' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'Nome' deve ser preenchido";
+            }
             vazio = true;
         }
         if(jTextFieldRG.getText().length() == 0){
             jTextFieldRG.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'RG' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'RG' deve ser preenchido";
+            }
+            vazio = true;
+        }
+        if(jTextFieldCPF.getText().length() == 0){
+            jTextFieldCPF.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'CPF' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'CPF' deve ser preenchido";
+            }
+            vazio = true;
+        }
+        if(jTextFieldData_Nasc.getText().length() != 10){
+            jTextFieldData_Nasc.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Data de Nascimento' deve ser preenchido \n Exemplo: 01/01/2000";
+            }else{
+                errorMessage += "\nO campo 'Data de Nascimento' deve ser preenchido \n Exemplo: 01/01/2000";
+            }
             vazio = true;
         }
         if(jTextFieldEmail.getText().length() == 0){
             jTextFieldEmail.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Email' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'Email' deve ser preenchido";
+            }
             vazio = true;
         }
+        
+        String DDD = jTextFieldDDDCel.getText();
+        boolean verificador = false;
+        try {
+            if(jTextFieldDDDCel.getText().length() != 2){
+                jTextFieldDDDCel.setBorder(new LineBorder(Color.RED));
+                jTextFieldDDDCel.setText(null);
+                if(errorMessage == null){
+                    errorMessage = "\nO campo 'DD' deve ser preenchido com 2 números";
+                }else{
+                    errorMessage += "\nO campo 'DD' deve ser preenchido com 2 números";
+                }
+                vazio = true;
+            }else{
+                int DDDConvertido = Integer.parseInt(DDD);
+                verificador = true;
+            }
+        } catch (Exception e) {
+            if(verificador == false){
+                jTextFieldDDDCel.setBorder(new LineBorder(Color.RED));
+                jTextFieldDDDCel.setText(null);
+                if(errorMessage == null){
+                    errorMessage = "\nO campo 'DD' aceita apenas números";
+                }else{
+                    errorMessage += "\nO campo 'DD' aceita apenas números";
+                }
+            }
+            vazio = true;
+        }        
+        
+        String Cel = jTextFieldCel.getText();
+        boolean verificador2 = false;
+        try {
+            int CelConvertido = Integer.parseInt(Cel);
+            verificador2 = true;
+        } catch (Exception ex) {
+            if(verificador2 == false){
+                jTextFieldCel.setBorder(new LineBorder(Color.RED));
+                jTextFieldCel.setText(null);
+                if(errorMessage == null){
+                    errorMessage = "\nO campo 'Celular' aceita apenas números";
+                }else{
+                    errorMessage += "\nO campo 'Celular' aceita apenas números";
+                }
+            }else if(jTextFieldCel.getText().length() != 9){
+                    jTextFieldCel.setBorder(new LineBorder(Color.RED));
+                    if(errorMessage == null){
+                        errorMessage = "\nO campo 'Celular' deve ser preenchido com 9 números";
+                    }else{
+                        errorMessage += "\nO campo 'Celular' deve ser preenchido com 9 números";
+                    }
+                }
+            vazio = true;
+        }
+
+        if(jTextFieldRua.getText().length() == 0){
+            jTextFieldRua.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Rua' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'Rua' deve ser preenchido";
+            }
+            vazio = true;
+        }
+        
+        if(jTextFieldBairro.getText().length() == 0){
+            jTextFieldBairro.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Bairro' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'Bairro' deve ser preenchido";
+            }
+            vazio = true;
+        }
+        
         if(jTextFieldCidade.getText().length() == 0){
             jTextFieldCidade.setBorder(new LineBorder(Color.RED));
+            if(errorMessage == null){
+                errorMessage = "\nO campo 'Cidade' deve ser preenchido";
+            }else{
+                errorMessage += "\nO campo 'Cidade' deve ser preenchido";
+            }
             vazio = true;
         }
-        */
         
+        if(errorMessage != null){
+            JOptionPane.showMessageDialog(null, errorMessage);
+        }
+        
+        //////////////////////////////////////////////////////////////////////
         if(vazio == false){
 
             Usuario usuario = new Usuario();
@@ -688,7 +799,7 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
                 usuario.setEmail(jTextFieldEmail.getText());
                 usuario.setCelular("("+jTextFieldDDDCel.getText()+") "+ jTextFieldCel.getText());
                 usuario.setRua(jTextFieldRua.getText());
-                usuario.setNum_casa(Integer.parseInt(jTextFieldNumero.getText()));
+                usuario.setNum_casa(Integer.parseInt(jSpinnerNumero.getValue().toString()));
                 usuario.setBairro(jTextFieldBairro.getText());
                 usuario.setCidade(jTextFieldCidade.getText());
                 usuario.setEstado(jComboBoxEstado.getSelectedItem().toString());
@@ -704,9 +815,10 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
             }
    
         }
-        else{
+    
+        /*else{
             JOptionPane.showMessageDialog(null, "Há campos obrigatórios a serem preenchidos.");
-        }
+        }*/
         
     }//GEN-LAST:event_jButtonAvancarActionPerformed
 
@@ -734,10 +846,6 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
          jTextFieldRua.setBorder(new LineBorder(new Color(70,130,180), 2));
     }//GEN-LAST:event_jTextFieldRuaFocusGained
 
-    private void jTextFieldNumeroFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldNumeroFocusGained
-         jTextFieldNumero.setBorder(new LineBorder(new Color(70,130,180), 2));
-    }//GEN-LAST:event_jTextFieldNumeroFocusGained
-
     private void jTextFieldBairroFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldBairroFocusGained
          jTextFieldBairro.setBorder(new LineBorder(new Color(70,130,180), 2));
     }//GEN-LAST:event_jTextFieldBairroFocusGained
@@ -762,10 +870,6 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
         jTextFieldRua.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
     }//GEN-LAST:event_jTextFieldRuaFocusLost
 
-    private void jTextFieldNumeroFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldNumeroFocusLost
-        jTextFieldNumero.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
-    }//GEN-LAST:event_jTextFieldNumeroFocusLost
-
     private void jTextFieldBairroFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldBairroFocusLost
         jTextFieldBairro.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
     }//GEN-LAST:event_jTextFieldBairroFocusLost
@@ -785,27 +889,27 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonAvancarMouseExited
 
     private void jTextFieldCelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldCelFocusGained
-        // TODO add your handling code here:
+        jTextFieldCel.setBorder(new LineBorder(new Color(70,130,180), 2));
     }//GEN-LAST:event_jTextFieldCelFocusGained
 
     private void jTextFieldCelFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldCelFocusLost
-        // TODO add your handling code here:
+        jTextFieldCel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
     }//GEN-LAST:event_jTextFieldCelFocusLost
 
     private void jTextFieldDDDCelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldDDDCelFocusGained
-        // TODO add your handling code here:
+        jTextFieldDDDCel.setBorder(new LineBorder(new Color(70,130,180), 2));
     }//GEN-LAST:event_jTextFieldDDDCelFocusGained
 
     private void jTextFieldDDDCelFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldDDDCelFocusLost
-        // TODO add your handling code here:
+        jTextFieldDDDCel.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
     }//GEN-LAST:event_jTextFieldDDDCelFocusLost
 
     private void jTextFieldData_NascFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldData_NascFocusGained
-        // TODO add your handling code here:
+        jTextFieldData_Nasc.setBorder(new LineBorder(new Color(70,130,180), 2));
     }//GEN-LAST:event_jTextFieldData_NascFocusGained
 
     private void jTextFieldData_NascFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldData_NascFocusLost
-        // TODO add your handling code here:
+       jTextFieldData_Nasc.setBorder(new LineBorder(Color.LIGHT_GRAY, 1));
     }//GEN-LAST:event_jTextFieldData_NascFocusLost
 
     private void jMenuItemInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemInicioActionPerformed
@@ -1059,6 +1163,7 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelContent;
     private javax.swing.JPanel jPanelHeader;
     private javax.swing.JPanel jPanelWrapper;
+    private javax.swing.JSpinner jSpinnerNumero;
     private javax.swing.JTextField jTextFieldBairro;
     private javax.swing.JTextField jTextFieldCPF;
     private javax.swing.JTextField jTextFieldCel;
@@ -1067,7 +1172,6 @@ public class Cad_Aluno_1 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldData_Nasc;
     private javax.swing.JTextField jTextFieldEmail;
     private javax.swing.JTextField jTextFieldNome;
-    private javax.swing.JTextField jTextFieldNumero;
     private javax.swing.JTextField jTextFieldRG;
     private javax.swing.JTextField jTextFieldRua;
     // End of variables declaration//GEN-END:variables

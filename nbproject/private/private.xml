@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/dao/Conexao.java</file>
-            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/view/Tela_Login.java</file>
-            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/dao/ExercicioDAO.java</file>
-            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/dao/ProfessorDAO.java</file>
+            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/dao/AlunoDAO.java</file>
+            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/view/Alterar_Excluir_Aluno.java</file>
+            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/view/Cad_Aluno_1.java</file>
+            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/view/Cons_Status_Aluno.java</file>
+            <file>file:/home/lubuntu/Desktop/Pessoal/00FATEC/5º%20Semestre/POO%20-%20Noite%20-%202/Projeto_Semestral/MVC%20-%20(JAVA)ProjetoSemestral/src/view/Consultar_Alterar_Excluir_Treino.java</file>
         </group>
     </open-files>
 </project-private>
